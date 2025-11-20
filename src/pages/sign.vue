@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div>
     <signComp />
   </div>
@@ -6,4 +6,4 @@
 
 <script setup>
 import signComp from "@/components/layouts/signComp.vue";
-</script>
+</script> -->
