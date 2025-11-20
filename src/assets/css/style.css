@@ -2959,8 +2959,8 @@ label {
   transform: translate(-50%, -50%);
 }
 .btn-more-movie {
-  box-shadow: 0px 3px 24px 0px rgba(160, 160, 160, 0.5);
   background: #e4d804;
+  border: none;
   color: #130d0d;
   padding: 12px;
   border-radius: 10px;

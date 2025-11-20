@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import navbar from './components/layouts/navbar.vue';
 import footer from './components/layouts/footer.vue';
-import routers from './router/router';
+import routers from './router/router.js';
 import moviesDynamic from './components/home/moviesDynamic.vue';
 import tvDynamic from './components/home/tvDynamic.vue';
 import topMovies from './components/home/topMovies.vue';

@@ -89,9 +89,9 @@
                       </form>
                     </li> -->
                     <li class="header-btn">
-                      <router-link to="/signin" class="btn"
+                      <!-- <router-link to="/signin" class="btn"
                         >Sign In</router-link
-                      >
+                      > -->
                     </li>
                   </ul>
                 </div>
