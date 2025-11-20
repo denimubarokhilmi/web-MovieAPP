@@ -2960,7 +2960,7 @@ label {
 }
 .btn-more-movie {
   background: #e4d804;
-  border: none;
+  border: 1px solid white;
   color: #130d0d;
   padding: 12px;
   border-radius: 10px;
