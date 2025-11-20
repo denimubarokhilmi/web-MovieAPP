@@ -14,34 +14,21 @@
           <div class="ucm-nav-wrap">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li
+                v-for="(item, index) in btnMove"
+                :key="index - 1"
                 class="nav-item"
                 role="presentation"
-                @click="switchComp($event, 'movies')"
+                @click="switchComp($event, item.name)"
               >
                 <a
-                  class="nav-link active"
+                  :class="{ active: actives == item.name }"
+                  class="nav-link"
                   id="tvShow-tab"
                   data-toggle="tab"
                   role="tab"
                   aria-controls="tvShow"
                   aria-selected="true"
                   >Movies</a
-                >
-              </li>
-
-              <li
-                class="nav-item"
-                role="presentation"
-                @click="switchComp($event, 'tv')"
-              >
-                <a
-                  class="nav-link"
-                  id="movies-tab"
-                  data-toggle="tab"
-                  role="tab"
-                  aria-controls="movies"
-                  aria-selected="false"
-                  >TV Shows</a
                 >
               </li>
             </ul>
@@ -127,11 +114,17 @@
 import { computed, ref } from "vue";
 let isComp = ref("movies-dynamic");
 let titleUpcoming = ref("Upcoming Movies");
+let actives = ref("movies");
+const btnMove = ref([{ name: "movies" }, { name: "tv" }]);
+
 const switchComp = (e, name) => {
   if (name == "movies") {
     isComp.value = "movies-dynamic";
+    actives.value = name;
     titleUpcoming.value = "Upcoming Movies";
   } else {
+    actives.value = name;
+
     isComp.value = "tv-dynamic";
     titleUpcoming.value = "On The Air Tv Show";
   }
