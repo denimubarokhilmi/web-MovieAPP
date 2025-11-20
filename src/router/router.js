@@ -4,7 +4,6 @@ import home from "@/pages/home.vue";
 import movies from "@/pages/movies.vue";
 import tv from "@/pages/tv.vue";
 import contact from "@/pages/contact.vue";
-import sign from "@/pages/sign.vue";
 
 // const userRouters = useRouter();
 const routers = createRouter({
@@ -34,12 +33,7 @@ const routers = createRouter({
                 title: "Contact - Movfix - Online Movies & TV Shows"
             }
         },
-        {
-            path: "/signin", component: sign, name: "Sign",
-            meta: {
-                title: "Sign - Movfix - Online Movies & TV Shows",
-            }
-        }
+
     ]
 })
 
