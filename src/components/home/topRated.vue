@@ -28,9 +28,7 @@
           </div>
         </div>
       </div>
-      <keep-alive max="2">
-        <component :is="isComp"></component>
-      </keep-alive>
+      <component :is="isComp"></component>
     </div>
   </section>
   <!-- top-rated-movie-end -->

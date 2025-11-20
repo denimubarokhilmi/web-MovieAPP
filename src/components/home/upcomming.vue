@@ -35,9 +35,9 @@
           </div>
         </div>
       </div>
-      <keep-alive max="2">
-        <component :is="isComp"></component>
-      </keep-alive>
+      <!-- <keep-alive max="2"> -->
+      <component :is="isComp"></component>
+      <!-- </keep-alive> -->
     </div>
   </section>
   <!-- up-coming-movie-area-end -->
